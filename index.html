@@ -1,0 +1,69 @@
+<!doctype html><html lang=""><head><meta charset="utf-8"><meta name="description" content="Somos una clínica dental y kinesiología ubicada en concepción. Brindamos calidad en nuestros servicios y un cuidado especial para nuestros pacientes."><meta name="viewport" content="width=device-width,initial-scale=1"><title>Kidental|Kinesiología y Odontología</title><script src="https://maps.googleapis.com/maps/api/js?v=3.exp"></script><!-- GoogleMaps --><!-- GoogleMap API --><script>function initialize() {
+      var myLatLng = {lat: -36.8199937, lng: -73.0175860};
+      var mapCanvas = document.getElementById('map');
+      var mapOptions = {
+        center: new google.maps.LatLng(myLatLng),
+        zoom: 18,
+        scrollwheel: false,
+        draggable:false,
+        disableDefaultUI: true,
+        mapTypeId: google.maps.MapTypeId.ROADMAP,
+        styles: [
+        {
+          "featureType": "road.arterial",
+          "stylers": [
+          { "color": "#b5b73b" }
+          ]
+        },{
+          "featureType": "road.local",
+          "stylers": [
+          { "color": "#b5b73b" },
+          { "saturation": 5 }
+          ]
+        },{
+          "featureType": "road",
+          "elementType": "labels.text.stroke",
+          "stylers": [
+          { "color": "#ffffff" },
+          { "visibility": "on" },
+          { "weight": 0.4 }
+          ]
+        },{
+          "featureType": "road",
+          "elementType": "labels.text.fill",
+          "stylers": [
+          { "color": "#ffffff" }
+          ]
+        },{
+          "featureType": "landscape.man_made",
+          "stylers": [
+          { "color": "#a9aab2" }
+          ]
+        }
+        ]
+      }
+      var map = new google.maps.Map(mapCanvas, mapOptions);
+      var marker = new google.maps.Marker({
+        position: myLatLng,
+        map: map,
+        animation: google.maps.Animation.DROP,
+        title: 'Kidental'
+      });
+      marker.setMap(map);
+      marker.addListener('click', toggleBounce);
+    }
+    function toggleBounce() {
+      if (marker.getAnimation() !== null) {
+        marker.setAnimation(null);
+      } else {
+        marker.setAnimation(google.maps.Animation.BOUNCE);
+      }
+    }
+    google.maps.event.addDomListener(window, 'load', initialize);</script><link rel="apple-touch-icon" href="apple-touch-icon.png"><!-- Place favicon.ico in the root directory --><link rel="stylesheet" href="styles/vendor.css"><link rel="stylesheet" href="styles/main.css"><link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"></head><body><!--[if lt IE 10]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]--><!-- Main navbar --><nav class="navbar navbar-default navbar-fixed-top"><div class="container"><!-- Brand and toggle get grouped for better mobile display --><div class="navbar-header"><div class="logo-mobile"><a class="page-scroll" href="#carousel-kidental">Kidental</a></div><button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button></div><!-- Collect the nav links, forms, and other content for toggling --><div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"><ul class="nav navbar-nav"><li class="inner-nav"><a class="page-scroll" href="#somos">¿quienes somos?</a></li><li class="inner-nav"><a class="page-scroll" href="#somos">tratamientos</a></li><li class="inner-nav"><a class="page-scroll" href="#services">servicios</a></li><li class="logo"><a class="page-scroll" href="#carousel-kidental"><img src="images/marca.png" alt="logo-kidental"></a></li><li class="inner-nav"><a class="page-scroll" href="#location">ubicación</a></li><li class="inner-nav"><a class="page-scroll" href="#convenio">convenios</a></li><li class="inner-nav"><a class="page-scroll" href="#contacto">contacto</a></li></ul></div><!-- /.navbar-collapse --></div></nav><!-- End of navbar --><!-- Slider --><div id="carousel-kidental" class="carousel slide" data-ride="carousel"><!-- Indicators --><ol class="carousel-indicators"><li data-target="#carousel-kidental" data-slide-to="0" class="active"></li><li data-target="#carousel-kidental" data-slide-to="1"></li><li data-target="#carousel-kidental" data-slide-to="2"></li></ol><!-- Wrapper for slides --><div class="carousel-inner" role="listbox"><div class="item active"><img src="images/slide1.jpg" alt="slider1"></div><div class="item"><img src="images/slide2.jpg" alt="slider2"></div><div class="item"><img src="images/slide3.jpg" alt="aparatos clinica dental"></div></div><!-- Controls --> <a class="left carousel-control" href="#carousel-kidental" role="button" data-slide="prev"><span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span> <span class="sr-only">Previous</span> </a><a class="right carousel-control" href="#carousel-kidental" role="button" data-slide="next"><span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span> <span class="sr-only">Next</span></a></div><!-- End of slider --><!-- Quienes somos --><section id="somos"><div class="container"><div class="row"><div class="col-sm-6 text-center left-somos wow bounceInUp" data-wow-delay="1s"><h2 class="sec-title">¿Quiénes somos?</h2><hr><p class="faded">Somos una clínica dental,<br>Entregamos una atención integral<br>y satisfactoria a nuestros pacientes.<br><br><span style="font-style:italic">Ofrecemos una variedad de servicios odontológicos<br>con los máximos estándares de calidad,<br>infraestructura y tecnología de punta.<br><br>Nuestro equipo humano consta de profesionales<br>altamente calificados y un experimentado personal de apoyo<br>que te brindará un servicio de primer nivel.</span></p></div><div class="col-sm-6"><h2 class="sec-title">Tratamientos</h2><hr><div class="tab wow bounceInRight" data-wow-delay="1s"><input id="tab-one" type="checkbox" name="tabs"><label for="tab-one">Sellantes y flúor</label><div class="tab-content"><p>El sellado es un procedimiento preventivo por el que se tapa las fosas y fisuras sanas de los dientes mediante la aplicación de una resina. La aplicación de flúor es un procedimiento dental preventivo, en el que se aplica la mencionada sustancia sobre las piezas dentarias, para evitar futuras lesiones de caries dental.</p></div></div><div class="tab wow bounceInRight" data-wow-delay="1.5s"><input id="tab-two" type="checkbox" name="tabs"><label for="tab-two">Prótesis removibles</label><div class="tab-content"><p>Son prótesis parciales o totales removibles que se usan para mejorar la estética y la función masticatoria.</p></div></div><div class="tab wow bounceInRight" data-wow-delay="2s"><input id="tab-three" type="checkbox" name="tabs"><label for="tab-three">Prótesis fijas</label><div class="tab-content"><p>Coronas e incrustaciones.</p></div></div><div class="tab wow bounceInRight" data-wow-delay="2.5s"><input id="tab-four" type="checkbox" name="tabs"><label for="tab-four">Endodoncia</label><div class="tab-content"><p>La endodoncia consiste en eliminar la pulpa dental cuando se encuentra infectada o inflamada y que causa un fuerte dolor (pulpitis). Una vez que la pulpa se extrae; el espacio que queda se limpia, se vuelve a dar forma y se rellena.</p></div></div><div class="tab wow bounceInRight" data-wow-delay="3s"><input id="tab-five" type="checkbox" name="tabs"><label for="tab-five">Periodoncia</label><div class="tab-content"><p>Consiste en limpiar secciones del diente que se encuentran bajo el límite de la encía</p></div></div><div class="tab wow bounceInRight" data-wow-delay="3.5s"><input id="tab-six" type="checkbox" name="tabs"><label for="tab-six">Blanqueamiento dental</label><div class="tab-content"><p>El blanqueamiento de los dientes permite eliminar la mayoría de las manchas producidas por el té, café y otras infusiones, cigarrillos y vino tinto, entre otras sustancias y alimentos.</p></div></div></div></div></div></section><!-- End of Quienes somos --><!-- Servicios --><section id="services"><div class="container servicios"><div class="row"><div class="inner-services col-md-4 wow zoomIn" data-wow-delay="1s"><div class="circle-icon"><i class="fa fa-gift fa-5x"></i></div><h2 class="s-header">Presupuesto gratis</h2><p class="faded">Pide tu hora al 041-3183635.<br>Y pide tu presupuesto gratis</p></div><div class="inner-services col-md-4 wow zoomIn" data-wow-delay="2s"><div class="circle-icon"><i class="fa fa-ambulance fa-5x"></i></div><h2 class="s-header">Atención de emergencia</h2><p class="faded">Servicio de urgencia 24 hrs.<br>Al teléfono +56995590020</p></div><div class="inner-services col-md-4 wow zoomIn" data-wow-delay="3s"><div class="circle-icon"><i class="fa fa-bank fa-5x"></i></div><h2 class="s-header">Convenios</h2><p class="faded">¿Tienes tu empresa?<br>Crea un convenio con nosotros.</p></div></div></div></section><!-- End of Servicios --><!-- Ubicacion --><section id="location"><h2 class="sec-title location-title">Ubicación</h2><hr><div id="map"></div></section><!-- End of Ubicacion --><!-- Convenio --><section id="convenio"><div class="container"><div class="row"><h2 class="sec-title">Convenios</h2><hr><p class="faded">¿Tienes tu empresa? Contáctanos para crear un convenio con nuestra clínica. Los convenios pueden incluir una rebaja en los planes dentales o beneficios. Aprovecha esta oprtunidad para trabajar con nosotros.</p></div></div></section><!-- End of Convenio --><footer id="contacto"><div class="container"><div class="row"><div class="col-sm-4"><h2 class="footer-title">Kidental</h2><p>Sonreir con confianza no cuesta.<br>Kidental. Todos los derechos reservados.</p></div><div class="col-sm-4"><h2 class="footer-title">Contacto</h2><p><span class="glyphicon glyphicon-home" aria-hidden="true"></span> Los Lirios 55, Concepción. Chile</p><p><span class="glyphicon glyphicon-envelope" aria-hidden="true"></span> clinicakidental@gmail.com</p><p><span class="glyphicon glyphicon-phone" aria-hidden="true"></span> +041-3183635</p></div><div class="col-sm-4"><h2 class="footer-title">Síguenos</h2></div><div class="fa-center"><a href="https://www.facebook.com/profile.php?id=100010371077294&sk=about" target="_blank"><i class="fa fa-facebook-official fa-5x"></i></a></div></div></div></footer><!-- Google Analytics: change UA-XXXXX-X to be your site's ID. --><script>(function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');</script><script src="scripts/vendor.js"></script><script src="scripts/plugins.js"></script><script src="scripts/main.js"></script><script>new WOW().init();</script></body></html>
